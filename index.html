@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/cards.css">
+    <link rel="shortcut icon" href="img/iconos/AvoIcon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <title>AvoGrowth</title>
+</head>
+
+<body>
+    <div>
+        <header>
+            <nav>
+                <img src="img/iconos/AvoLogo2.png" alt="AvoGrowth">
+                <div class="derecha">
+                    <a href="#seccion1">Desde la raíz</a>
+                    <a href="#seccion2">Caso de estudio</a>
+                    <a href="html/formulario1.html">Cultivo Inteligente</a>
+                    <a href="#seccion4">Balance</a>
+                    <a href="#seccion5">AvoGrowth</a>
+                </div>
+            </nav>
+        </header>
+        <div class="content parallax">
+            <main>
+                <!-- Sección 1 - Parallax -->
+                <div id="seccion1" class="contenido">
+                    <div class="titulo">
+                        <h1>Desde la raíz</h1>
+                        <!-- <img src="img/raiz3.png" alt="Desde la raiz" class="img"> -->
+                        <p>¿Alguna vez te has preguntado qué secretos esconde la tierra donde crece un aguacate?
+                            Sumérgete
+                            en un viaje desde las profundidades del suelo hasta la copa de los árboles.</p>
+                    </div>
+                </div>
+
+                <!-- Sección 2 - Parallax -->
+                <div id="seccion2" class="contenido">
+                    <div class="titulo">
+                        <h1>Caso de Estudio</h1>
+                        <p>Explora nuestro caso de estudio sobre el cultivo de aguacates inteligentes y sostenibles, y
+                            cómo
+                            esta tecnología cambia la agricultura.</p>
+                    </div>
+                    <div class="caso-estudio">
+                        <div class="caso-mapa">
+                            <img src="img/mapa/Aguacate.png" alt="mapa caso de estudio">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sección 5 - Parallax -->
+                <div id="seccion5" class="contenido">
+                    <div class="titulo">
+                        <h1>AvoGrowth</h1>
+                        <p>Descubre más sobre nuestra visión y misión para transformar la agricultura en un mundo más
+                            sostenible a través de la tecnología.</p>
+                    </div>
+                    <table class="cards">
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <div class="card">
+                                        <div class="flip-card">
+                                            <div class="flip-card-inner">
+                                                <div class="flip-card-front">
+                                                    <img src="https://www.w3schools.com/howto/img_avatar.png"
+                                                        alt="Avatar" style="width:300px;height:300px;">
+                                                </div>
+                                                <div class="flip-card-back">
+                                                    <h1>John Doe</h1>
+                                                    <p>Architect & Engineer</p>
+                                                    <p>We love that guy</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="card">
+                                        <div class="flip-card">
+                                            <div class="flip-card-inner">
+                                                <div class="flip-card-front">
+                                                    <img src="https://www.w3schools.com/howto/img_avatar.png"
+                                                        alt="Avatar" style="width:300px;height:300px;">
+                                                </div>
+                                                <div class="flip-card-back">
+                                                    <h1>John Doe</h1>
+                                                    <p>Architect & Engineer</p>
+                                                    <p>We love that guy</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="card">
+                                        <div class="flip-card">
+                                            <div class="flip-card-inner">
+                                                <div class="flip-card-front">
+                                                    <img src="https://www.w3schools.com/howto/img_avatar.png"
+                                                        alt="Avatar" style="width:300px;height:300px;">
+                                                </div>
+                                                <div class="flip-card-back">
+                                                    <h1>John Doe</h1>
+                                                    <p>Architect & Engineer</p>
+                                                    <p>We love that guy</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="contactenos">
+
+                    <form action="https://formspree.io/f/manyzddl" method="post">
+                        <fieldset>
+                            <legend>Contáctenos:</legend>
+                            <label for="name">Nombre completo:</label>
+                            <input type="text" id="name" name="name" required placeholder="Ingresa tu nombre">
+                            <label for="email">Correo Electronico:</label>
+                            <input type="email" id="email" name="email" required placeholder="Ingresa tu correo">
+                            <label for="location">Ubicación (Pais/ciudad)</label>
+                            <input type="text" id="location" name="location" required placeholder="Pon tu ubicación">
+                            <label for="recomendaciones">Envianos tus dudas y recomendaciones</label>
+                            <!-- <input type="text" id="recomendaciones" name="recomendaciones" required placeholder="Expresate con nosotros"> -->
+                            <textarea id="recomendaciones" name="recomendaciones" rows="4" cols="200"></textarea>
+                            <br>
+                            <button type="submit">Enviar Encuesta</button>
+                        </fieldset>
+                    </form>
+
+                </div>
+                <footer class="footer">
+                    <p>Creado por Portgas D. Anilorak - <a href="mailto:anilorakportgasd@gmail.com"
+                            class="correo">Contáctame</a> -
+                        Bootcamp Talento Tech Región 2 - 2024</p>
+                </footer>
+            </main>
+        </div>
+    </div>
+</body>
+
+</html>

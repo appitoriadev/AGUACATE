@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gráfico de Barras Responsivo</title>
+  <link rel="stylesheet" href="../css/graphic_bar.css">
+  <link rel="shortcut icon" href="../img/iconos/AvoIcon.ico" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <header>
+    <h1>Porcentaje de afectacion en plantas de plagas y/o Enfermedades</h1>
+  </header>
+  <nav class="navbar">
+  
+      <a href="../index.html">Inicio</a>
+      <a href="formulario1.html">Calculadora</a>
+      <a href="arboles.html">Producción de arboles</a>
+      <a href="zocas.html">Resiembras y zocas</a>
+          
+</nav>
+  <main>
+    <div class="chart-container">
+        <canvas id="graficoTortaPlagas"></canvas>
+    </div>
+    <div class="chart-container">
+        <canvas id="graficoAreaPlagas"></canvas>
+    </div>
+  </main>
+  <script src="../js/plagas.js"></script>
+  <script src="../js/plagas2.js"></script>
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/formulario.css">
+    <link rel="shortcut icon" href="../img/iconos/AvoIcon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <title>AvoGrowth</title>
+</head>
+
+<body>
+    <header class="header">
+        <h1>Calculemos Cantidaes y gastos Según tu terreno</h1>
+    </header>
+
+    <nav class="navbar">
+        <ul>
+            <li><a href="../index.html">Inicio</a></li>
+            <li><a href="formulario1.html" class="nav-align">Calculadora</a></li>
+        </ul>      
+    </nav>
+
+    <div class="layout-grid">
+        <main class="main-content">
+            <section class="calculadora">
+                <h2>Calcula los costos de tu predio</h2>
+                <form id="form_ahorro">
+                    <div class="form-group">
+                        <label for="hectareas">Tamaño del terreno en hectareas: </label>
+                        <input type="number" id="hectareas" name="hectareas" min="0" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="tipo-zona">Que tan humedo (lluvias) suele ser el lugar?:</label>
+                        <select id="tipo-zona" name="tipo-zona" required>
+                            <option value="mucho">Es muy humedo</option>
+                            <option value="medio">Suele haber humedad</option>
+                            <option value="poco">Es muy seco</option>
+                        </select>
+                    </div>
+                    <button type="button" id="calcular-btn">Calcular</button>
+                </form>
+            </section>
+
+            <!-- Contenedor para mostrar los resultados del cálculo -->
+            <section id="resultados" class="resultados hidden">
+                <h2>Resultados de productividad</h2>
+                <div class="result-card">
+                    <p><strong>Consumo de agua estimado:</strong> <span id="consumo-agua"></span> Lit</p>
+                    <p><strong>Consumo energetico estimado:</strong> <span id="consumo-elec"></span> Kwh</p>
+                    <p><strong>Cantidad de arboles aproximados:</strong> <span id="cant-arboles"></span></p>
+                    <p><strong>Arboles productivos:</strong> <span id="arboles-productivos"></span></p>
+                    <p><strong>Arboles improductivos:</strong> <span id="arboles-improductivos"></span></p>
+                    <p><strong>Arboles que depronto erradiques:</strong> <span id="arboles-erradicados"></span></p>
+                    <p><strong>Resiembra en el año:</strong> <span id="arboles-resembrados"></span></p>
+                    <p><strong>Cantidad de zocas posibles:</strong> <span id="zocas"></span></p>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <footer class="footer">
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti provident neque ullam enim ducimus perspiciatis architecto deserunt asperiores at fugit, ea laudantium? Voluptatum quas molestiae cum architecto quod dignissimos quaerat!</p>
+    </footer>
+
+    <script src="../js/formulario.js"></script>
+</body>
+
+</html>
